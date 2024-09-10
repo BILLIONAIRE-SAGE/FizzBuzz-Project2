@@ -9,7 +9,12 @@ const endNumb = 100;
 
 for (let a = startNumb; a <= endNumb; a++){
     let output = '';
+
    
+    if(a % 3 === 0 && a % 5 === 0){
+     output = "FizzBuzz"
+    }
+    
     if(a % 3 === 0){
 
         output = "Fizz";
@@ -19,14 +24,9 @@ for (let a = startNumb; a <= endNumb; a++){
         output = "Buzz";
    }
    
-   if(output === ''){
+   else if(output === ''){
         output = a;
    }
-   
-   if(a % 3 === 0 && a % 5 === 0){
-    output = "FizzBuzz"
-   }
-   
 
     console.log(output);
 
