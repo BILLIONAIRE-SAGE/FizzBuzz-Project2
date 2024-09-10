@@ -10,20 +10,20 @@ const endNumb = 100;
 for (let a = startNumb; a <= endNumb; a++){
     let output = '';
 
-   
-    if(a % 3 === 0 && a % 5 === 0){
+   if(a % 3 === 0 && a % 5 === 0){
      output = "FizzBuzz"
     }
-    
-    if(a % 3 === 0){
+   
+   else if(a % 3 === 0){
 
         output = "Fizz";
    }
    
-   if(a % 5 === 0){
+   else if(a % 5 === 0){
         output = "Buzz";
    }
-   
+  
+
    else if(output === ''){
         output = a;
    }
